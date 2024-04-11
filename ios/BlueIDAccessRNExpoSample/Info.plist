@@ -42,6 +42,8 @@
       <key>NSAllowsLocalNetworking</key>
       <true/>
     </dict>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Required to scan BLE Devices</string>
     <key>UILaunchStoryboardName</key>
     <string>SplashScreen</string>
     <key>UIRequiredDeviceCapabilities</key>

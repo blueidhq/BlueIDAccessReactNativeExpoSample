@@ -3,6 +3,10 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTLinkingManager.h>
 
+// Add these 2 lines to import BlueID library
+#import <React/RCTEventEmitter.h>
+#import "blueid_access_react_native-Swift.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -13,7 +17,38 @@
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 
+  // Add this so that the SDK initializes once your app starts
+  [BlueAppDelegate didFinishLaunchingWithOptions:launchOptions];
+
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+  // Add this so that the SDK clear timers and resources
+  // when app is about to become inactive
+  [BlueAppDelegate willResignActive];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+  // Add this so that the SDK clear timers and resources
+  // when app is terminated
+  [BlueAppDelegate willTerminate];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+  // Add this so that the SDK restart timers and synchronize credentials
+  // when app has become active again
+  [BlueAppDelegate didBecomeActive];
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+  // Add this so that the SDK clear timers and resources
+  // when app goes to background
+  [BlueAppDelegate didEnterBackground];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
