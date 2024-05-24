@@ -1,12 +1,12 @@
 PODS:
-  - blueid-access-react-native (1.31.0):
-    - BlueIDAccessSDK (= 1.31.0)
+  - blueid-access-react-native (1.39.0):
+    - BlueIDAccessSDK (= 1.39.0)
     - glog
     - iOSDFULibrary (= 4.15.0)
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
     - SwiftProtobuf (= 1.24.0)
-  - BlueIDAccessSDK (1.31.0):
+  - BlueIDAccessSDK (1.39.0):
     - iOSDFULibrary (= 4.15.0)
     - SwiftProtobuf (= 1.24.0)
   - boost (1.83.0)
@@ -1283,8 +1283,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  blueid-access-react-native: 99b78d78a528bbdccfcb965ad8fbbbd610fd7c44
-  BlueIDAccessSDK: cada3face402a5fd929551da74690f5a6e9c9bc6
+  blueid-access-react-native: 3b4e0cf74b75d1edf5c5c2289c3e153187f1a7e7
+  BlueIDAccessSDK: b0a8681bf37325ee4026c940cbc3c2ee77ee075e
   boost: d3f49c53809116a5d38da093a8aa78bf551aed09
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
   EXConstants: 988aa430ca0f76b43cd46b66e7fae3287f9cc2fc
